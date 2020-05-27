@@ -1,0 +1,16 @@
+.Shape_5, .Shape_5_copy{
+	background: url(sprites.png) no-repeat;
+}
+
+.Shape_5{
+	background-position: -19.00000762939453px -1px ;
+	width: 12px;
+	height: 23px;
+}
+
+.Shape_5_copy{
+	background-position: -4px -2px ;
+	width: 12px;
+	height: 23px;
+}
+

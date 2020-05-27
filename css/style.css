@@ -1,0 +1,592 @@
+
+
+
+/*reset*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			html,body{
+				scroll-behavior: smooth;
+			}
+			.clearfix:after{
+				content:"";
+				clear: both;
+				display: block;
+			}
+			label{
+				cursor: pointer;
+			}
+
+
+/*main container*/
+			.wrapper{
+				margin: 0 auto;
+				width: 1170px;
+				position: relative;
+				font-family: "Open Sans";
+			}
+/*header*/
+			.clearfix { 
+				clear: both; 
+			}
+			.mainList{
+				float: right;
+				display: flex;
+				width: 548px;
+				justify-content: space-between;
+				margin: 45px 0 32px 0;
+				position: relative;
+			}
+			.mainlogo{
+				float: left;
+				margin: 33px 0 0  0;
+			}
+			.mainList>li>a{
+				text-decoration: none;
+				color: #484c55;
+				font-size: 15px;
+				line-height: 24px;
+			}
+			.activ{
+				color: #49cbcd;
+			}
+			.mainList:after{
+				content: "";
+				position: absolute;
+				top:-45px;
+				left: -20px;
+				width: 85px;
+				height: 98px;
+				background-color: #f8f9fb;
+				border-bottom:3px solid #49cbcd;
+				z-index: -1;
+			}
+/*slider*/	
+			.slider{
+				background: #44c0c2;
+				background-image: url("../img/slider.png");
+				height: 566px;
+				text-align: center;
+				color: #ffffff;
+				background-size: cover;
+				margin:0 auto;
+			}
+			.mainHeader{
+				text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
+				font-size: 63px;
+				padding-top: 139px;
+			}
+			.leftButtonsInSlider{
+				position: absolute;
+				width: 51px;
+				height: 51px;
+				border-radius: 50%;
+				border:2px solid #ffffff;
+				background: #ffffff;
+				font-size: 43px;
+				color: #49cbcd;
+				top: 275px;
+				left: -50px;
+				cursor: pointer;
+
+			}
+			.leftButtonsInSlider>i{
+				position: absolute;
+				top: 0;
+				left: 13px;
+			}
+			.textInSlider{
+				width: 375px;
+				height: 70px;
+				overflow: hidden;
+				margin: 0 auto;
+				font-size: 23px;
+				line-height: 37px;
+				text-align: center;
+				padding-top: 30px;
+			}
+			.rightButtonsInSlider{
+				position: absolute;
+				width: 51px;
+				height: 51px;
+				border-radius: 50%;
+				border:2px solid #ffffff;
+				background: #ffffff;
+				font-size: 43px;
+				color: #49cbcd;
+				top: 275px;
+				right: -50px;
+				cursor: pointer;
+
+			}
+			.rightButtonsInSlider>i{
+				position: absolute;
+				top: 0;
+				right: 13px;
+			}
+			.buttonInClider{
+				display: block;
+				box-sizing: border-box;
+				margin: 0 auto;
+				padding: 15px;
+				width: 225px;
+				height: 63px;
+				border: 3px solid #ffffff;
+				background: #fff;
+				background: rgba(255, 255, 255, 0);
+				font-weight: 400;
+				font-size: 26px;
+				letter-spacing: 0.52px;
+				color: #ffffff;
+				border-radius: 10px;
+  				text-decoration: none;
+  				margin-top: 60px;
+			}
+
+/*info about site (4 blocks)*/
+			.infoAboutSite{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 100px;
+				margin-top: 110px;
+				color: #4e525d;
+			}
+			.infoAboutSite>div{
+				width: 247px;
+
+			}
+			.iconInfo{
+				width: 99px;
+				height: 99px;
+				border: 3px solid #49cbcd;
+				border-radius: 50%;
+				margin:0 auto;
+				font-size: 43px;
+				color: #49cbcd;
+			}
+			.iconInfo>i{
+				margin-top:30px;
+				margin-left: 35px;
+
+			}
+			.iconRocket>i{
+				margin-left: 30px;
+			}
+			.iconDesktop>i{
+				margin-left: 28px;
+			}
+			.items{
+				color: #4e525d;
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: center;
+			}
+			.infoBlocks>h3{
+				margin-bottom: 24px;
+				margin-top: 50px;
+			}
+			.textInBlocks{
+				text-align: center;
+				max-height: 70px;
+				overflow: hidden;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+			.infoBlocks>a{
+				margin: 0 auto;
+				width: 97px;
+				height: 30px;
+				background-color: #49cbcd;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 26px;	
+				text-decoration: none;
+				display: block;
+				border-radius: 1px solid #49cbcd;
+				border-radius: 5px;
+				text-align: center;
+				margin-top: 20px;
+			}
+/*gallery*/
+			.sectionWindow{
+				background: #f1f1f1;
+			}
+			.gallery{
+				font-family: "Open Sans";
+				font-weight: 400;
+				padding-top: 50px;
+				padding-bottom: 70px;
+				background: #f1f1f1;
+			}
+			.titleOfPortfolio{
+				font-size: 42px;
+				text-align: center;
+				margin-bottom: 65px;
+				color: #4e525d;
+			}
+			.portfolio{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				
+			}
+			.portfolio>img{
+				margin-bottom: 30px;
+
+			}
+			.portfolioButton{
+				display: block;
+				text-align: center;
+				width: 232px;
+				height: 63px;
+				margin: 30px auto;
+				background-color: #49cbcd;
+				color: #ffffff;
+				font-size: 24px;
+				line-height: 27.53px;
+				text-decoration: none;
+				padding-top: 20px;
+				box-sizing: border-box;
+			}
+/*The Team*/
+			.teamSection{
+				margin-top: 90px;
+				margin-bottom: 110px;
+			}
+			.teamSection>h2{
+				font-size: 42px;
+				color: #4e525d;
+				margin-bottom: 140px;
+				text-align: center;
+			}
+			.itemsCircle{
+				width: 201px;
+				height: 201px;
+				background-color: #eeeef0;
+				border:1px solid #eeeef0;
+				border-radius: 50%;
+				box-sizing: border-box;
+				margin-bottom: 70px;
+			}
+			.teamSection>div{
+				display: flex;
+				justify-content: space-between;
+			}
+			.teamMembers{
+				width: 247px;
+			}
+			.activCircle{
+				font-size: 85px;
+				font-weight: 700;
+				padding-left: 75px;
+				padding-top: 55px;
+				color: #f46d6d;
+			}
+			.teamMembers>p{
+				font-size: 14px;
+				color: #4e525d;
+				text-align: center;
+				line-height: 26px;
+			}
+			.proffesionTeam{
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+/*section products*/
+			.productsCatalog{
+				padding-top: 120px;
+				padding-bottom: 100px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.product{
+				width: 370px;
+			}
+			.product>h2{
+				height: 76px;
+				color: #ffffff;
+				font-size: 26px;
+				line-height: 48px;
+				text-align: center;
+				padding-top: 14px;
+				box-sizing: border-box;
+			}
+			.prodectBasicPremium>h2{
+				background: #485460;
+				
+			}
+			.middleProduct>h2{
+				background: #49cbcd;
+
+			}
+			.product>p{
+				background: #f8f9fb;
+				font-size: 20px;
+				font-weight: 400;
+				color: #485460;
+				text-align: center;
+				min-height: 70px;
+				box-sizing: border-box;
+				padding-top: 25px;
+			}
+			.subscriptionList>li{
+				height: 45px;
+				color: #8c9299;
+				font-size: 14px;
+				text-align: center;
+				padding-top: 20px;
+				background: #ffffff;
+				border-top: 1px solid #ecf0f1;
+				box-sizing: border-box;
+			}
+			.subscriptionButton{
+  				min-height: 100px;
+  				border: 1px solid #ecf0f1;
+				background-color: #ffffff;
+				background: #f8f9fb;
+  			}
+  			.subscriptionButton>button{
+  				width: 170px;
+				height: 40px;
+				background-color: #788492;
+				text-align: center;
+				border:1px solid #788492;
+				border-radius: 5px;
+				font-size: 17px;
+				color: #ffffff;
+				margin-left: 100px;
+				margin-top: 30px;
+				cursor:pointer;
+  			}
+  			.subscriptionButtonMiddle>button{
+  				background: #49cbcd;
+  				border:1px solid #49cbcd;
+
+  			}
+ /*reviews section*/
+  			.reviews{
+  				padding-top: 145px;
+  				padding-bottom: 100px;
+  			}
+  			.reviewsButton{
+  				position: absolute;
+  				border: none; 
+				/*outline: none;*/
+				background: #ffffff;
+				top: 240px;
+				cursor: pointer;
+  			}
+  			.reviewsLeftButton{
+  				background-image: url(../img/sprites.png);
+  				background-position: -19.00000762939453px -1px ;
+				width: 12px;
+				height: 23px;
+				left: 20px;
+
+  			}
+  			.reviewsRightButton{
+  				background-image: url(../img/sprites.png);
+  				background-position: -4px -2px ;
+				width: 12px;
+				height: 23px;
+				right: 20px;
+
+  			}
+  			.someReview{
+  				color: #4e525d;
+  				text-align: center;
+
+  			}
+  			.textReviews{
+  				width: 645px;
+  				font-size: 19px;
+  				line-height: 30px;
+  				margin: 0 auto;
+  				margin-top: 40px;
+  				margin-bottom: 40px;
+  			}
+  			.reviewsItem{
+  				font-size: 42px;
+  			}
+  			.reviewAuthor{
+  				color: #9a8faf;
+				font-size: 21px;
+  			}
+/*footer*/
+			footer{
+				background: #1b1b1b;
+				background-image: url("../img/footer.png");
+				height: 691px;
+				text-align: center;
+				color: #ffffff;
+				background-size: cover;
+				margin:0 auto;
+				z-index: -1;
+			}
+			.footerContainer{
+				padding-top: 105px;
+			}
+			.footerHeader{
+				text-align: center;
+				font-size: 42px;
+				margin-bottom: 116px;
+			}
+			.contacts{
+				float: left;
+				width: 440px;
+				text-align: left;
+			}
+			.contactsForm{
+				float: right;
+				width: 570px;
+			}
+			.contacts>h3{
+				font-size: 24px;
+			}
+			.contaxtText{
+				opacity: 0.5;
+				font-size: 14px;
+				line-height: 21px;
+				margin-top: 15px;
+				margin-bottom: 40px;
+			}
+			.contactsList{
+				margin-bottom: 20px;
+
+			}
+			.contactsList>li{
+				position: relative;
+				display: inline-block;
+				margin-right: 13px;
+				width: 42px;
+				height: 42px;
+				border:1px solid rgba(0,0,0,0.3);
+				border-radius: 50%;
+			}
+			.facebook{
+				background-color: #3b5997;
+			}
+			.twitter{
+				background-color: #3ec2f3;
+			}
+			.google{
+				background-color: #e44c41;
+			}
+			.socLink{
+				position: absolute;
+				top:10px;
+				left: 13px;
+				color: #ffffff;
+				font-size: 23px;
+
+			}
+			.googleLink{
+				position: absolute;
+				top:10px;
+				left: 10px;
+				color: #ffffff;
+				font-size: 23px;
+			}
+			.contactsInfo>a{
+				color: #bface2;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			.contactsInfo{
+				margin-bottom: 13px;
+			}
+			.form{
+				color: #c1c1c1;
+				font-size: 16px;
+			}
+			.inputName{
+				float: left;
+				width: 270px;
+				padding-left: 20px;
+				box-sizing: border-box;
+				padding-top: 14px;
+				padding-bottom: 14px;
+				border: 1px solid #ffffff;
+				border-radius: 2px;
+			}
+			.emailForm{
+				float: right;
+				width: 270px;
+				padding-left: 20px;
+				box-sizing: border-box;
+				padding-top: 14px;
+				padding-bottom: 14px;
+				border: 1px solid #ffffff;
+				border-radius: 2px;
+			}
+			.sendSmS{
+				width: 570px;
+				padding-left: 20px;
+				box-sizing: border-box;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				min-height: 179px;
+				padding-top: 20px;
+				border: 1px solid #ffffff;
+				border-radius: 2px;
+			}
+			::-webkit-input-placeholder {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}
+			::-moz-placeholder          {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}/* Firefox 19+ */
+			:-moz-placeholder           {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}/* Firefox 18- */
+			:-ms-input-placeholder      {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}
+
+			.formSubmit{
+				width: 170px;
+				height: 50px;
+				background-color: #49cbcd;
+				border: 1px solid #49cbcd;
+				border-radius: 2px;
+				float: right;
+				font-size: 22px;
+				color: #ffffff;
+				font-family: "Open Sans";
+				cursor:pointer;
+			}
