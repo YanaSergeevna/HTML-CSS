@@ -66,7 +66,18 @@
 				position: relative;
 				font-family: "Open Sans";
 			}
-/*header*/
+/*header*/	
+			.headmenu{
+				position: fixed;
+				width: 100%;
+				transform: translateY(-100%);
+				animation: 0.5s;
+			}
+			.headmenu--stick{
+				transform: translateY(0);
+				background: #ffffff;
+				z-index: 10;
+			}
 			.clearfix { 
 				clear: both; 
 			}
@@ -75,34 +86,35 @@
 				display: flex;
 				width: 548px;
 				justify-content: space-between;
-				margin: 45px 0 32px 0;
 				position: relative;
 			}
 			.mainlogo{
 				float: left;
-				margin: 33px 0 0  0;
+				padding: 33px 0 0  0;
 			}
 			.mainList>li>a{
 				text-decoration: none;
 				color: #484c55;
 				font-size: 15px;
 				line-height: 24px;
-			}
-			.activ{
-				color: #49cbcd;
-			}
-			.mainList:after{
-				content: "";
-				position: absolute;
-				top:-45px;
-				left: -20px;
 				width: 85px;
 				height: 98px;
+				display: block;
+				padding-top: 44px;
+				padding-left: 20px;
+				box-sizing: border-box;
+			}
+			.mainList>li>a:hover{
+				color: #49cbcd;
 				background-color: #f8f9fb;
 				border-bottom:3px solid #49cbcd;
-				z-index: -1;
 			}
 /*slider*/	
+			.item-box{
+				position: relative;
+				height: 1px;
+				top:-100px;
+			}
 			.slider{
 				background: #44c0c2;
 				background-image: url("../img/slider.png");
@@ -110,7 +122,6 @@
 				text-align: center;
 				color: #ffffff;
 				background-size: cover;
-				margin:0 auto;
 			}
 			.mainHeader{
 				text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
@@ -259,7 +270,6 @@
 				font-weight: 400;
 				padding-top: 50px;
 				padding-bottom: 70px;
-				background: #f1f1f1;
 			}
 			.titleOfPortfolio{
 				font-size: 42px;
@@ -410,35 +420,21 @@
   			.reviews{
   				padding-top: 145px;
   				padding-bottom: 100px;
-  			}
-  			.reviewsButton{
-  				position: absolute;
-  				border: none; 
-				/*outline: none;*/
-				background: #ffffff;
-				top: 240px;
-				cursor: pointer;
-  			}
-  			.reviewsLeftButton{
-  				background-image: url(../img/sprites.png);
-  				background-position: -19.00000762939453px -1px ;
-				width: 12px;
-				height: 23px;
-				left: 20px;
-
-  			}
-  			.reviewsRightButton{
-  				background-image: url(../img/sprites.png);
-  				background-position: -4px -2px ;
-				width: 12px;
-				height: 23px;
-				right: 20px;
-
-  			}
-  			.someReview{
   				color: #4e525d;
   				text-align: center;
-
+  			}
+  			.someReview>.owl-nav>.owl-next{
+  				position: absolute;
+				top: 80px;
+				right: 0;
+				cursor: pointer;
+				transform: rotate(180deg);
+  			}
+  			.someReview>.owl-nav>.owl-prev{
+  				position: absolute;
+				top: 80px;
+				left: 0;
+				cursor: pointer;
   			}
   			.textReviews{
   				width: 645px;
@@ -454,6 +450,9 @@
   			.reviewAuthor{
   				color: #9a8faf;
 				font-size: 21px;
+				display: block;
+				text-align: center;
+				margin-top: 40px;
   			}
 /*footer*/
 			footer{
