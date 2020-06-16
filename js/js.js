@@ -22,6 +22,21 @@ $('.slider-img').owlCarousel({
 	        },
 	    }
 })
+$('.team-block-mobile').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:true,
+	    navText: [],
+	    dots: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        1:{
+	            items:2
+	        },
+	    }
+})
 		$('.nav-toggle').on('click', function(){
 		  $('#menu').toggleClass('active');
 		});

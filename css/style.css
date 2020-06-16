@@ -60,7 +60,7 @@ slider-mobile-content/*reset*/
 /*main container*/
 			.body{
 				font-family: "Open Sans";
-				scroll-padding-top: 100px;
+				overflow: hidden;
 				}
 			.wrapper{
 				margin: 0 auto;
@@ -74,9 +74,6 @@ slider-mobile-content/*reset*/
 				max-width: 960px;
 				padding: 0 15px;
 				}
-			.navigation-box{
-				height: 1px;
-			}
 /*header*/	
 			.header{
 				position: sticky;
@@ -385,7 +382,7 @@ slider-mobile-content/*reset*/
 				box-sizing: border-box;
 				margin-bottom: 70px;
 				text-align: center;
-				margin-left: 22px;
+				margin: 0 auto;
 			}
 			.teamSection-activCircle{
 				font-size: 85px;
@@ -412,6 +409,9 @@ slider-mobile-content/*reset*/
 				margin-top: 30px;
 				height: 75px;
 				overflow: hidden;
+			}
+			.teamSection>.team-block-mobile{
+				display: none;
 			}
 /*section products*/
 			.productsCatalog{
@@ -666,11 +666,17 @@ slider-mobile-content/*reset*/
 				font-family: "Open Sans";
 				cursor:pointer;
 			}
+			@media (max-width: 1024px){
+			.product{
+				width: 45%;
+			}
+
+			}
 			@media (max-width: 768px) {
 			/* показываем кнопку для переключения верхней навигации */
 			.nav-toggle {
 				display: block;
-				}
+			}
 			footer{
 				padding: 0 10px 0 10px;
 			}
@@ -714,10 +720,11 @@ slider-mobile-content/*reset*/
 				flex-wrap: wrap;
 				padding-bottom: 20px;
 				padding-top: 20px;
+				padding: 20px 10px 20px 10px;
 			}
 			.specializationBlock-item{
 				margin-top: 20px;
-				width: 230px;
+				width:45%;
 			}
 			.specializationBlock-item-header{
 				margin-top: 20px;
@@ -741,9 +748,6 @@ slider-mobile-content/*reset*/
 			.gallery{
 				padding-bottom: 20px;
 			}
-			.gallery-portfolio{
-				flex-direction: column;
-			}
 			.gallery-portfolio>img{
 				max-width: 100%;
 				height: auto;
@@ -755,21 +759,24 @@ slider-mobile-content/*reset*/
 			}
 			.teamSection>ul{
 				flex-wrap:wrap;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 			.productsCatalog{
 				flex-wrap:wrap;
 				justify-content: center;
-				padding-bottom: 30px;
-				padding-top: 30px;
+				padding: 30px 10px 30px 10px;
 			}
 			.product{
 				margin-bottom: 20px;
+				margin-left: 10px;
+				width: 100%;
 			}
 			.teamSection>h2{
 				margin-bottom: 40px;
 			}
 			.teamSection-members{
-				width: 240px;
+				width:45%;
 				margin-bottom: 20px;
 			}
 			.teamSection-circle{
@@ -782,12 +789,14 @@ slider-mobile-content/*reset*/
 			    margin-top: 30px;
 			    margin-bottom: 30px;
 			}
+			.team-block-mobile{
+				display: none;
+			}
 			.textReviews{
 				width: auto;
 			}
 			.reviews{
-				padding-bottom: 50px;
-				padding-top: 50px;
+				padding: 50px 10px 50px 10px;
 			}
 			.someReview>.owl-nav>button:last-child{
   				display: none;
@@ -822,6 +831,9 @@ slider-mobile-content/*reset*/
   				float: right;
   				width: 200px;
   			}
+  			.contacts{
+  				width: 100%;
+  			}
   			.contacts>div{
   				width: 200px;
   			}
@@ -829,15 +841,67 @@ slider-mobile-content/*reset*/
   				width: 100%;
   			}
   			.inputName{
-  				width: 160px;
+  				width: 45%;
   			}
   			.sendSmS{
   				width: 100%;
   			}
   			.emailForm{
+  				width: 45%;
   				padding: 14px 10px 14px 10px;
   			}
-
-
+  			.teamSection>.team-block-mobile{
+				display: block;
+				justify-content: center;
+			}
+			.teamSection>.team-block-mobile{
+				display: none;
+			}
+}
+			@media (max-width: 480px) {
+				
+			.teamSection-circle{
+				width: 150px;
+				height: 150px;
+				padding-top: 30px;
+			}
+			.teamSection>ul{
+				display: none;
+			}
+			.contacts{
+				width: auto;
+			}
+			.inputName{
+  				width: 45%;
+  				padding: 5px 5px 5px 5px;
+  			}
+  			.emailForm{
+  				padding: 5px 5px 5px 5px;
+  				width: 45%;
+  			}
+  			.footerHeader{
+  				margin-bottom: 10px;
+  				font-size: 30px
+  			}
+  			.contacts>h3{
+  				font-size: 20px;
+  			}
+  			.contaxtText {
+			    font-size: 14px;
+			    line-height: 20px;
+			    margin-top: 5px;
+			    margin-bottom: 20px;
+			}
+			.contacts>div {
+    			width: 50%;
+			}
+			.contactsList {
+			    float: right;
+			    width: 50%;
+			}
+			.contactsList>li {
+		    	margin-right: 5px;
+			}
+}
 
 
