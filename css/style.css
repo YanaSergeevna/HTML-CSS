@@ -125,6 +125,10 @@ slider-mobile-content/*reset*/
 				background: #49cbcd;
 				cursor: pointer;
 				}
+			.nav-toggle:hover{
+				background: #49cbcd99;
+				transition: all 0.3s;
+			}
 			.nav-toggle span {
 				display: block;
 				position: absolute;
@@ -211,6 +215,11 @@ slider-mobile-content/*reset*/
 				right: 28px;
 				cursor: pointer;
 			}
+			.slider-img>.owl-nav>button:hover{
+				border:2px solid #ffffff99;
+				background: #fefefe99;
+				transition: all 0.3s;
+			}
 			.slider-img>.owl-nav>.owl-next:before{
 				content: "";
 				position: absolute;
@@ -256,7 +265,11 @@ slider-mobile-content/*reset*/
   				margin-top: 60px;
   				line-height: 0.92;
 			}
-
+			.slider-button:hover{
+				border: 3px solid #ffffff99;
+				color: #ffffff99;
+				transition: all 0.3s;
+			}
 /*info about site (4 blocks)*/
 			.specializationBlock{
 				display: flex;
@@ -307,7 +320,7 @@ slider-mobile-content/*reset*/
 				margin: 0 auto;
 				width: 97px;
 				height: 30px;
-				background-color: #49cbcd;
+				background: #49cbcd;
 				color: #ffffff;
 				font-size: 14px;
 				line-height: 26px;	
@@ -317,6 +330,11 @@ slider-mobile-content/*reset*/
 				border-radius: 5px;
 				text-align: center;
 				margin-top: 20px;
+			}
+			.specializationBlock-item>a:hover{
+				background: #49cbcd99;
+				border: 1px solid #49cbcd99;
+				transition: all 0.3s;
 			}
 /*gallery*/
 			.sectionWindow{
@@ -349,7 +367,7 @@ slider-mobile-content/*reset*/
 				width: 232px;
 				height: 63px;
 				margin: 39px auto;
-				background-color: #49cbcd;
+				background: #49cbcd;
 				color: #ffffff;
 				font-size: 24px;
 				text-decoration: none;
@@ -357,6 +375,11 @@ slider-mobile-content/*reset*/
 				box-sizing: border-box;
 				border: 1px solid #49cbcd;
 				border-radius: 3px;
+			}
+			.gallery-portfolio-button:hover{
+				border: 1px solid #49cbcd99;
+				background: #49cbcd99;
+				transition: all 0.3s;
 			}
 /*The Team*/
 			.teamSection{
@@ -383,6 +406,7 @@ slider-mobile-content/*reset*/
 				margin-bottom: 70px;
 				text-align: center;
 				margin: 0 auto;
+				cursor: pointer;
 			}
 			.teamSection-activCircle{
 				font-size: 85px;
@@ -432,7 +456,7 @@ slider-mobile-content/*reset*/
 				text-align: center;
 				padding-top: 14px;
 				box-sizing: border-box;
-				background-color: #485460;
+				background: #485460;
 			}
 			.product>p{
 				background: #f8f9fb;
@@ -473,6 +497,15 @@ slider-mobile-content/*reset*/
 				margin-top: 30px;
 				cursor:pointer;
   			}
+  			.product:hover h2{
+  				background: #49cbcd;
+  				transition: all 0.3s;
+  			}
+  			.product:hover .subscriptionButton>button{
+  				background: #49cbcd;
+  				border-color: #49cbcd;
+  				transition: all 0.3s;
+  			}
  /*reviews section*/
   			.reviews{
   				padding-top: 145px;
@@ -501,6 +534,10 @@ slider-mobile-content/*reset*/
 				border-left: 2px solid #8c8c8c;
 				border-bottom: 2px solid #8c8c8c;
 				cursor: pointer;
+  			}
+  			.someReview>.owl-nav>button:hover{
+  				border-color: #000;
+  				transition: all 0.3s;
   			}
   			.textReviews{
   				width: 645px;
@@ -572,13 +609,26 @@ slider-mobile-content/*reset*/
 				border-radius: 50%;
 			}
 			.facebook{
-				background-color: #3b5997;
+				background: #3b5997;
+			}
+			.facebook:hover{
+				background: #1b399799;
+				transition: all 0.3s;
 			}
 			.twitter{
-				background-color: #3ec2f3;
+				background: #3ec2f3;
+			}
+			.twitter:hover{
+				background: #AFEEEE;
+				transition: all 0.3s;
+
 			}
 			.google{
-				background-color: #e44c41;
+				background: #e44c41;
+			}
+			.google:hover{
+				background: #DC143C	;
+				transition: all 0.3s;
 			}
 			.socLink{
 				position: absolute;
@@ -599,6 +649,10 @@ slider-mobile-content/*reset*/
 				color: #bface2;
 				text-decoration: none;
 				font-size: 14px;
+			}
+			.contactsInfo>a:hover{
+				color: #bface299;
+				transition: all 0.3s;
 			}
 			.contactsInfo{
 				margin-bottom: 13px;
@@ -665,6 +719,12 @@ slider-mobile-content/*reset*/
 				color: #ffffff;
 				font-family: "Open Sans";
 				cursor:pointer;
+			}
+			.formSubmit:hover{
+				border-color: #00FFFF;
+				background: #00FFFF;
+				transition: all 0.3s;
+				
 			}
 			@media (max-width: 1024px){
 			.product{
@@ -744,6 +804,11 @@ slider-mobile-content/*reset*/
 				width: 180px;
 				height: 50px;
 				font-size: 20px;
+			}
+			.slider-button:hover{
+				border-color: #49cbcd44; 
+				background: #49cbcd44;
+				color: #fff;
 			}
 			.gallery{
 				padding-bottom: 20px;

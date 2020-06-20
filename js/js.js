@@ -54,44 +54,6 @@ $('.team-block-mobile').owlCarousel({
 		    });
 		});
 
-//activ product
-$('#left-product-activ-button').hover(
-    function(){
-        $(this).css('background-color','#49cbcd');
-        $(this).css('border', '1px solid #49cbcd');
-        $('.left-product-header').css('background-color','#49cbcd');
-    },
-    function(){
-       $(this).css('background-color','#788492');
-       $('.left-product-header').css('background-color','#485460');
-       $(this).css('border', '1px solid #788492');
-   }
-);
-$('#middl-product-activ-button').hover(
-    function(){
-        $(this).css('background-color','#49cbcd');
-        $(this).css('border', '1px solid #49cbcd');
-        $('.middl-product-header').css('background-color','#49cbcd');
-    },
-    function(){
-       $(this).css('background-color','#788492');
-       $('.middl-product-header').css('background-color','#485460');
-       $(this).css('border', '1px solid #788492');
-   }
-);
-$('#right-product-activ-button').hover(
-    function(){
-        $(this).css('background-color','#49cbcd');
-        $(this).css('border', '1px solid #49cbcd');
-        $('.right-product-header').css('background-color','#49cbcd');
-    },
-    function(){
-       $(this).css('background-color','#788492');
-       $('.right-product-header').css('background-color','#485460');
-       $(this).css('border', '1px solid #788492');
-   }
-);
-
 // heder navigation
 $(document).ready(function() {
 
@@ -105,3 +67,13 @@ $(document).ready(function() {
 		e.preventDefault();
 		})
 });
+
+var hoverPlus = document.getElementsByClassName('teamSection-activCircle')
+for(elem of hoverPlus){
+    elem.onmouseover = function(event){
+        event.target.innerText = '+'
+    }
+    elem.onmouseout = function(event){
+        event.target.innerText = ''
+    }
+}
