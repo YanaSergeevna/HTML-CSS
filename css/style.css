@@ -84,12 +84,14 @@ slider-mobile-content/*reset*/
 			.clearfix { 
 				clear: both; 
 			}
+			nav{
+				display: flex;
+				justify-content: space-between;
+			}
 			.mainlogo{
-				float: left;
 				padding-top: 33px;
 			}
 			.header-menu{
-				float: right;
 				display: flex;
 				width: 588px;
 				justify-content: space-between;
